@@ -8,4 +8,4 @@ height = st.number_input("What is your height(m): ", step = 0.01)
 button = st.button("Calculate BMI")
 if button:
   BMI = mass/height**2
-  st.success(f"Your BMI is {BMI}%.2f")
+  st.success(f"Your BMI is {round(BMI, 1)}")
